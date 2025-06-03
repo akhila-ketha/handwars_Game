@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors</h1>
+    <div class="buttons">
+      <button onclick="play('rock')"><span>✊</span> Rock</button>
+      <button onclick="play('paper')"><span>✋</span> Paper</button>
+      <button onclick="play('scissors')"><span>✌</span> Scissors</button>
+    </div>
+    <div class="result">
+      <p id="user-choice">Your choice: -</p>
+      <p id="computer-choice">Computer's choice: -</p>
+      <h2 id="winner">Result: -</h2>
+      <audio id="sound-win" src="win.mp3"></audio>
+      <audio id="sound-lose" src="loss.mp3"></audio>
+      <audio id="sound-tie" src="tie.mp3"></audio>
+    </div>
+  </div>
+  <div class="floating-objects">
+    <div class="balloon red"></div>
+    <div class="balloon blue"></div>
+    <div class="balloon green"></div>
+    <div class="balloon yellow"></div>
+    <div class="balloon pink"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
